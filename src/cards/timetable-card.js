@@ -278,7 +278,7 @@ class PronoteTimetableCard extends LitElement {
             text-align:center;
         }
         div {
-            padding: 12px;
+            padding: 3px;
             font-weight:bold;
             font-size:1em;
         }
