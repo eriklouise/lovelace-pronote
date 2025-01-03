@@ -17,6 +17,7 @@ class PronoteAveragesCard extends LitElement {
         let child_sensor = this.config.entity.split('_averages')[0];
         let child_attributes = this.hass.states[child_sensor].attributes;
         let child_name = (typeof child_attributes['nickname'] === 'string' && child_attributes['nickname'].length > 0) ? child_attributes['nickname'] : child_attributes['full_name'];
+        child_name = (this.config.child_name !== null) ? this.config.child_name : child_name;
         return html`<div class="pronote-card-header">Moyennes de ${child_name}</div>`;
     }
 
@@ -228,5 +229,5 @@ window.customCards.push({
     type: "pronote-averages-card",
     name: "Pronote Averages Card",
     description: "Display the averages from Pronote",
-    documentationURL: "https://github.com/delphiki/lovelace-pronote?tab=readme-ov-file#averages",
+    documentationURL: "https://github.com/eriklouise/lovelace-pronote?tab=readme-ov-file#averages",
 });
