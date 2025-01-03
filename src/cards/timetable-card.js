@@ -278,7 +278,7 @@ class PronoteTimetableCard extends LitElement {
             text-align:center;
         }
         div {
-            padding: 3px;
+            padding: 1px;
             font-weight:bold;
             font-size:1em;
         }
@@ -298,7 +298,7 @@ class PronoteTimetableCard extends LitElement {
         }
         td {
             vertical-align: middle;
-            padding: 1px 5px 1px 5px;
+            padding: 0px 5px 0px 5px;
             text-align: left;
         }
         tr td:first-child {
@@ -324,7 +324,7 @@ class PronoteTimetableCard extends LitElement {
         span.lesson-status {
             color: white;
             background-color: rgb(75, 197, 253);
-            padding: 4px;
+            padding: 2px;
             border-radius: 4px;
         }
         .lesson-canceled span.lesson-name {
