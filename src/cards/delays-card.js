@@ -163,7 +163,7 @@ class PronoteDelaysCard extends LitElement {
         }
         td {
             vertical-align: middle;
-            padding: 5px 10px 5px 10px;
+            padding: 0px 5px 0px 5px;
             text-align: left;
         }
         tr td:first-child {
@@ -189,12 +189,12 @@ class PronoteDelaysCard extends LitElement {
         span.delay-from {
             color: white;
             font-weight:bold;
-            padding: 4px;
+            padding: 2px;
             border-radius: 4px;
         }
         span.delay-hours {
             font-size: 0.9em;
-            padding: 4px;
+            padding: 2px;
         }
         table + div {
             border-top: 1px solid white;
