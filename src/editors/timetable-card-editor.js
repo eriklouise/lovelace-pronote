@@ -23,6 +23,7 @@ class PronoteTimetableCardEditor extends BasePronoteCardEditor {
             ${this.buildSwitchField('Dim ended lessons', 'dim_ended_lessons', this._config.dim_ended_lessons, true)}
             ${this.buildSwitchField('Enable slider', 'enable_slider', this._config.enable_slider, false)}
             ${this.buildSwitchField('Display free time slots', 'display_free_time_slots', this._config.display_free_time_slots, true)}
+            ${this.buildTextField('Child name', 'child_name', this._config.child_name)}
         `;
     }
 }
