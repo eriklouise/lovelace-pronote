@@ -187,13 +187,13 @@ class PronoteHomeworkCard extends LitElement {
         }
         td {
             vertical-align: top;
-            padding: 5px 10px 5px 10px;
-            padding-top: 8px;
+            padding: 0px 5px 0px 5px;
+            padding-top: 4px;
             text-align: left;
         }
         td.homework-color {
             width: 4px;
-            padding-top: 11px;
+            padding-top: 4px;
         }
         td.homework-color > span {
             display:inline-block;
@@ -204,8 +204,8 @@ class PronoteHomeworkCard extends LitElement {
         }
         td.homework-detail {
             padding:0;
-            padding-top: 8px;
-            padding-bottom: 8px;
+            padding-top: 4px;
+            padding-bottom: 4px;
         }
         span.homework-subject {
             display:block;
