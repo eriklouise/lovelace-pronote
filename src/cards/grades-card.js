@@ -165,7 +165,7 @@ class PronoteGradesCard extends LitElement {
         }
         td {
             vertical-align: top;
-            padding: 5px 10px 5px 10px;
+            padding: 0px 5px 0px 5px;
             padding-top: 8px;
             text-align: left;
         }
