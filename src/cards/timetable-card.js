@@ -26,6 +26,7 @@ class PronoteTimetableCard extends LitElement {
         let child_sensor = this.config.entity.split('_timetable')[0];
         let child_attributes = this.hass.states[child_sensor].attributes;
         let child_name = (typeof child_attributes['nickname'] === 'string' && child_attributes['nickname'] !== '') ? child_attributes['nickname'] : child_attributes['full_name'];
+        child_name = (this.config.child_name !== null) ? this.config.child_name : child_name;
         return html`<div class="pronote-card-header">Emploi du temps de ${child_name}</div>`;
     }
 
