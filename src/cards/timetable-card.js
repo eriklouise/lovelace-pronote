@@ -298,7 +298,7 @@ class PronoteTimetableCard extends LitElement {
         }
         td {
             vertical-align: middle;
-            padding: 5px 10px 5px 10px;
+            padding: 1px 5px 1px 5px;
             text-align: left;
         }
         tr td:first-child {
