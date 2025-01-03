@@ -140,7 +140,7 @@ class PronoteDelaysCard extends LitElement {
             text-align:center;
         }
         div {
-            padding: 12px;
+            padding: 4px;
             font-weight:bold;
             font-size:1em;
         }
