@@ -21,6 +21,7 @@ class PronoteAveragesCardEditor extends BasePronoteCardEditor {
             ${this.buildTextField('Compare with ratio', 'compare_with_ratio', this._config.compare_with_ratio, '')}
             ${this.buildSwitchField('Display class min', 'display_class_min', this._config.display_class_min)}
             ${this.buildSwitchField('Display class max', 'display_class_max', this._config.display_class_max)}
+            ${this.buildTextField('Child name', 'child_name', this._config.child_name)}
         `;
     }
 }
