@@ -27,7 +27,8 @@ class PronoteHomeworkCard extends LitElement {
     getCardHeader() {
         let child_sensor = this.config.entity.split('_homework')[0];
         let child_attributes = this.hass.states[child_sensor].attributes;
-        let child_name = (typeof child_attributes['nickname'] === 'string' && child_attributes['nickname'] !== '') ? child_attributes['nickname'] : child_attributes['full_name'];
+        let child_name = (typeof child_attributes['nickname'] === 'string' && child_attributes['nickname'].length > 0) ? child_attributes['nickname'] : child_attributes['full_name'];
+        child_name = (this.config.child_name !== null) ? this.config.child_name : child_name;
         return html`<div class="pronote-card-header">Devoirs de ${child_name}</div>`;
     }
 
@@ -258,5 +259,5 @@ window.customCards.push({
     type: "pronote-homework-card",
     name: "Pronote Homework Card",
     description: "Display the homework from Pronote",
-    documentationURL: "https://github.com/delphiki/lovelace-pronote?tab=readme-ov-file#homework",
+    documentationURL: "https://github.com/eriklouise/lovelace-pronote?tab=readme-ov-file#homework",
 });
